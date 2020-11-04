@@ -1,6 +1,11 @@
 # AntiPublicSelenium
  This tool checks if the email from the combo.txt is leaked from a data breach or not.</br>
  You can use email:password pattern in the combo.txt or just emails.
+
+# Installation
+```
+pip3 install -r requirements.txt
+``` 
  
 # AntiPublicTool
 ![](https://i.ibb.co/ZWdDTGh/antipublic-tool.png)
