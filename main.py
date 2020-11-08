@@ -41,7 +41,7 @@ class Main:
         return choice(proxies_file)
 
     def ReadFile(self,filename,method):
-        with open(filename,method) as f:
+        with open(filename,method,encoding='utf8') as f:
             content = [line.strip('\n') for line in f]
             return content
 
@@ -59,14 +59,11 @@ class Main:
         self.clear()
         self.SetTitle('One Man Builds AntiPublic Tool Selenium')
         self.title = Style.BRIGHT+Fore.RED+"""
-                                 _   _ _______ _____   _____  _    _ ____  _      _____ _____ 
-                           /\   | \ | |__   __|_   _| |  __ \| |  | |  _ \| |    |_   _/ ____|
-                          /  \  |  \| |  | |    | |   | |__) | |  | | |_) | |      | || |     
-                         / /\ \ | . ` |  | |    | |   |  ___/| |  | |  _ <| |      | || |     
-                        / ____ \| |\  |  | |   _| |_  | |    | |__| | |_) | |____ _| || |____ 
-                       /_/    \_\_| \_|  |_|  |_____| |_|     \____/|____/|______|_____\_____|
-                                                                                                    
-                                                                                                    
+                                  ╔══════════════════════════════════════════════════╗          
+                                               ╔═╗╔╗╔╔╦╗╦  ╔═╗╦ ╦╔╗ ╦  ╦╔═╗
+                                               ╠═╣║║║ ║ ║  ╠═╝║ ║╠╩╗║  ║║  
+                                               ╩ ╩╝╚╝ ╩ ╩  ╩  ╚═╝╚═╝╩═╝╩╚═╝
+                                  ╚══════════════════════════════════════════════════╝
         """
         print(self.title)
         self.use_proxy = int(input(Style.BRIGHT+Fore.CYAN+'['+Fore.RED+'>'+Fore.CYAN+'] ['+Fore.RED+'1'+Fore.CYAN+']Proxy ['+Fore.RED+'0'+Fore.CYAN+']Proxyless: '))

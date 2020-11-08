@@ -123,3 +123,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+AntiPublicSelenium.zip
+AntiPublicSelenium/AntiPublicSelenium.exe
+AntiPublicSelenium/ChromeKiller.exe
+AntiPublicSelenium/combos.txt
+AntiPublicSelenium/proxies.txt
+AntiPublicSelenium/useragents.txt
